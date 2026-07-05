@@ -1,0 +1,485 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+/* ===========================
+   RESET
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Inter',sans-serif;
+    background:#f4f7fb;
+    color:#222;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+button{
+    font-family:inherit;
+    cursor:pointer;
+}
+
+input,
+textarea,
+select{
+    font-family:inherit;
+}
+
+/* ===========================
+   COLORS
+=========================== */
+
+:root{
+
+    --primary:#4F46E5;
+    --primary-dark:#4338CA;
+
+    --success:#10B981;
+    --warning:#F59E0B;
+    --danger:#EF4444;
+
+    --bg:#F4F7FB;
+    --white:#ffffff;
+
+    --text:#1E293B;
+    --text-light:#64748B;
+
+    --border:#E5E7EB;
+
+}
+
+/* ===========================
+   LAYOUT
+=========================== */
+
+.layout{
+    display:flex;
+    min-height:100vh;
+    background:var(--bg);
+}
+
+main{
+    flex:1;
+    padding:30px;
+}
+
+.page-title{
+    font-size:28px;
+    font-weight:700;
+    color:var(--text);
+    margin-bottom:25px;
+}
+
+/* ===========================
+   CARDS
+=========================== */
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.card{
+
+    background:var(--white);
+
+    border-radius:16px;
+
+    padding:25px;
+
+    box-shadow:
+    0 8px 24px rgba(0,0,0,.05);
+
+    transition:.3s;
+}
+
+.card:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:
+    0 15px 35px rgba(0,0,0,.08);
+
+}
+
+.card h3{
+
+    font-size:34px;
+
+    color:var(--primary);
+
+    margin-bottom:10px;
+
+}
+
+.card p{
+
+    color:var(--text-light);
+
+    font-size:15px;
+
+}
+
+/* ===========================
+   TABLE
+=========================== */
+
+.table-card{
+
+    margin-top:30px;
+
+    background:white;
+
+    border-radius:16px;
+
+    overflow:hidden;
+
+    box-shadow:0 8px 24px rgba(0,0,0,.05);
+
+}
+
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+}
+
+th{
+
+    background:#EEF2FF;
+
+    color:#444;
+
+    padding:18px;
+
+    text-align:left;
+
+    font-size:14px;
+
+}
+
+td{
+
+    padding:18px;
+
+    border-bottom:1px solid #eee;
+
+    font-size:15px;
+
+}
+
+tr:hover{
+
+    background:#fafafa;
+
+}
+
+/* ===========================
+   BUTTON
+=========================== */
+
+button{
+
+    background:var(--primary);
+
+    color:white;
+
+    border:none;
+
+    padding:10px 18px;
+
+    border-radius:8px;
+
+    transition:.3s;
+
+}
+
+button:hover{
+
+    background:var(--primary-dark);
+
+}
+
+/* ===========================
+   BADGES
+=========================== */
+
+.badge{
+
+    padding:6px 14px;
+
+    border-radius:30px;
+
+    font-size:13px;
+
+    font-weight:600;
+
+    background:#EEF2FF;
+
+    color:var(--primary);
+
+}
+
+/* ===========================
+   FORM
+=========================== */
+
+.form-card{
+
+    background:white;
+
+    max-width:700px;
+
+    padding:30px;
+
+    border-radius:18px;
+
+    box-shadow:0 8px 24px rgba(0,0,0,.05);
+
+}
+
+.form-card input,
+.form-card textarea,
+.form-card select{
+
+    width:100%;
+
+    margin-bottom:20px;
+
+    padding:14px;
+
+    border:1px solid var(--border);
+
+    border-radius:10px;
+
+    outline:none;
+
+    font-size:15px;
+
+}
+
+.form-card input:focus,
+.form-card textarea:focus,
+.form-card select:focus{
+
+    border-color:var(--primary);
+
+}
+
+/* ===========================
+   AUTH
+=========================== */
+
+.auth-page{
+
+    min-height:100vh;
+
+    display:grid;
+
+    grid-template-columns:1fr 450px;
+
+}
+
+.auth-left{
+
+    background:linear-gradient(
+    135deg,
+    #4F46E5,
+    #6366F1);
+
+    color:white;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:50px;
+
+}
+
+.auth-left h1{
+
+    font-size:50px;
+
+    margin-bottom:20px;
+
+}
+
+.auth-left p{
+
+    opacity:.9;
+
+    font-size:18px;
+
+    text-align:center;
+
+}
+
+.auth-card{
+
+    background:white;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    padding:60px;
+
+}
+
+.auth-card h2{
+
+    margin-bottom:30px;
+
+}
+
+.auth-card input,
+.auth-card select{
+
+    margin-bottom:18px;
+
+    padding:14px;
+
+    border-radius:10px;
+
+    border:1px solid #ddd;
+
+}
+
+.auth-card button{
+
+    margin-top:10px;
+
+}
+
+.auth-card p{
+
+    margin-top:25px;
+
+    text-align:center;
+
+}
+.chart-card{
+
+height:430px;
+
+background:white;
+
+margin-top:35px;
+
+padding:25px;
+
+border-radius:18px;
+
+box-shadow:0 10px 30px rgba(0,0,0,.05);
+
+width: 800px;
+
+}
+.badge.pending {
+    background: #FFF4CC;
+    color: #A16207;
+}
+
+.badge.assigned {
+    background: #DBEAFE;
+    color: #1D4ED8;
+}
+
+.badge.in-progress {
+    background: #EDE9FE;
+    color: #6D28D9;
+}
+
+.badge.resolved {
+    background: #DCFCE7;
+    color: #15803D;
+}
+
+.badge.closed {
+    background: #FEE2E2;
+    color: #B91C1C;
+}
+.badge.admin{
+background:#ede9fe;
+color:#6d28d9;
+padding:6px 12px;
+border-radius:20px;
+font-weight:600;
+}
+
+.badge.staff{
+background:#dbeafe;
+color:#2563eb;
+padding:6px 12px;
+border-radius:20px;
+font-weight:600;
+}
+
+.badge.user{
+background:#dcfce7;
+color:#15803d;
+padding:6px 12px;
+border-radius:20px;
+font-weight:600;
+}
+
+.search-box{
+width:300px;
+padding:10px;
+margin-bottom:20px;
+border:1px solid #ddd;
+border-radius:8px;
+}
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:900px){
+
+.auth-page{
+
+grid-template-columns:1fr;
+
+}
+
+.auth-left{
+
+display:none;
+
+}
+
+main{
+
+padding:20px;
+
+}
+
+.cards{
+
+grid-template-columns:1fr;
+
+}
+
+}

@@ -1,0 +1,127 @@
+.btn{
+
+    border:none;
+
+    outline:none;
+
+    border-radius:12px;
+
+    padding:13px 22px;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+/* PRIMARY */
+
+.btn.primary{
+
+    background:#4F46E5;
+
+    color:white;
+
+}
+
+.btn.primary:hover{
+
+    background:#4338CA;
+
+}
+
+/* SUCCESS */
+
+.btn.success{
+
+    background:#10B981;
+
+    color:white;
+
+}
+
+.btn.success:hover{
+
+    background:#059669;
+
+}
+
+/* DANGER */
+
+.btn.danger{
+
+    background:#EF4444;
+
+    color:white;
+
+}
+
+.btn.danger:hover{
+
+    background:#DC2626;
+
+}
+
+/* WARNING */
+
+.btn.warning{
+
+    background:#F59E0B;
+
+    color:white;
+
+}
+
+.btn.warning:hover{
+
+    background:#D97706;
+
+}
+
+/* OUTLINE */
+
+.btn.outline{
+
+    background:white;
+
+    color:#4F46E5;
+
+    border:2px solid #4F46E5;
+
+}
+
+.btn.outline:hover{
+
+    background:#EEF2FF;
+
+}
+
+/* GHOST */
+
+.btn.ghost{
+
+    background:transparent;
+
+    color:#4F46E5;
+
+}
+
+.btn.ghost:hover{
+
+    background:#EEF2FF;
+
+}
+
+/* DISABLED */
+
+.btn:disabled{
+
+    opacity:.6;
+
+    cursor:not-allowed;
+
+}
